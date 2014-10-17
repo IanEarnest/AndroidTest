@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- General -->
+    <string name="app_name">Fuel and Thrusters</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    <!-- Main activity -->
+    <string name="story">        
+        You are stranded in space on a space shuttle.
+        \nThere was a malfunction in the thrusters and the shuttle
+        \nhas spun off course.
+        \nYou have limited fuel.
+        \nUse the thrusters control panel to adjust your trajectory 
+        \nand keep you on target.
+    </string>
+    <string name="rules">
+        \nThere are 3 rounds to each game
+		\nYou have a 10 move limit.
+        \nBoth players can see the controls, only the active player 
+        \ncan use the controls.
+        \nOnce the target has been met, activate thrusters and move 
+        \nonto the next round.
+ 	</string>
+ 	<string name="help">
+        \nPress buttons to move the fuel volumes
+		\nGame stats on left
+		\nPlayer stats on right
+		\nPress open button then activate button to 
+		\nsubmit and check if you win that round.
+ 	</string>
+    <string name="cheat">
+        \nPuzzle 1 - Button 1, Button 10, Button 1
+		\n\nPuzzle 2 - Button 2
+		\n\nPuzzle 3 - Button 6, Button 12, Button 8,
+		\nButton 12, Button 6, Button 12, Button 8, Button 2, Button 8
+ 	</string>
+    
+    
+    <!-- Game activity -->
+    <string name="fuel_1_container">Fuel 1 Container</string>
+    <string name="fuel_2_container">Fuel 2 Container</string>
+    <string name="fuel_3_container">Fuel 3 Container</string>
+    <string name="fuel_4_container">Fuel 4 Container</string>
+    
+    
+    <!-- Electroserver -->
+    <string name="es5_ip">10.5.25.78</string>
+	<!-- 194.83.122.99 uni-->
+	<!-- 192.168.1.2 home-->
+    <integer-array name="es5_port">
+        <item>9899</item>
+    </integer-array>
+
+</resources>

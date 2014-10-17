@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:background="@color/space_background_color">
+    
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/space_font_color"
+        android:onClick="playAgain"
+        android:text="@string/hello_world" />
+    <TextView
+        android:id="@+id/playAgainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playAgain"
+        android:textColor="@color/space_font_color"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_world" />
+
+    
+    
+    <LinearLayout
+        android:id="@+id/fuel1layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/fuel1container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fuel_1_container"
+            android:src="@drawable/fuel10_0" />
+
+        <LinearLayout
+            android:id="@+id/fuel1layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/fuel1button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel1button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel1button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fuel2layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/fuel2container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fuel_2_container"
+            android:src="@drawable/fuel5_0" />
+
+        <LinearLayout
+            android:id="@+id/fuel2layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/fuel2button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel2button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel2button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fuel3layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fuel3layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/fuel3button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel3button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel3button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_no"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fuel3container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fuel_3_container"
+            android:src="@drawable/fuel4_0" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/fuel4layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fuel4layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/fuel4button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel4button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+
+            <Button
+                android:id="@+id/fuel4button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="transfer"
+                android:background="@drawable/transfer_yes"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fuel4container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fuel_4_container"
+            android:src="@drawable/fuel10_0" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    <TextView
+        android:id="@+id/roundNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gameStats"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    <TextView
+        android:id="@+id/targetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/roundNumber"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    
+    <TextView
+        android:id="@+id/playerStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    <TextView
+        android:id="@+id/playerTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/playerStats"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    <TextView
+        android:id="@+id/movesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/playerTurn"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/movesLeft"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+
+    
+    <Button
+        android:id="@+id/activate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/case_yes"
+        android:onClick="activate"
+        android:text="@string/hello_world"
+        android:textColor="@color/space_font_color" />
+</RelativeLayout>
